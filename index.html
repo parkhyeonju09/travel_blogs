@@ -22,10 +22,18 @@
          <!--메뉴-->
          <ul class="main">
             <li><a href="#" class="act">home</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">destination <i class="ri-arrow-down-s-line"></i></a></li>
-            <li><a href="#">photos</a></li>
-            <li><a href="#">work with me</a></li>
+            <li><a href="#about">about me</a></li> <!--1.연결-->
+            <li class="p-relative"><a href="#">destination<i class="ri-arrow-down-s-line"></i></a>
+               <div class="sub">
+                  <a href="#">프랑스 파리</a>
+                  <a href="#">독일 마인츠</a>
+                  <a href="#">이태리 로마</a>
+                  <a href="#">중국 상하이</a>
+                  <a href="#">일본 오사카</a>
+               </div>
+            <li><a href="#video">video</a></li> <!--1.연결-->
+            <li><a href="#best">best places</a></li> <!--1.연결-->
+            <li><a href="#workme">work with me</a></li> <!--1.연결-->
          </ul>
          <!--search-->
          <div class="searchbox">
@@ -39,26 +47,26 @@
    <section class="hero" id="hero">
       <div class="row align-end">
          <div class="col-30 h-img">
-            <img src="images/hero01.png" alt="h01" />
+            <img src="images/hero01.png" alt="h01" /><!--사진-->
          </div>
          <div class="col-20 h-img">
             <h1 class="vintage">Welcome!</h1>
             <p>Let’s explore the world<br>
                together, one destination at<br>
                a time.</p>
-            <img src="images/hero02.png" alt="h02" />
+            <img src="images/hero02.png" alt="h02" /><!--사진-->
          </div>
          <div class="col-6 h-img">
-            <img src="images/hero03.png" alt="h03" />
+            <img src="images/hero03.png" alt="h03" /><!--사진-->
          </div>
       </div>
       <div class="hero-box">
          <div class="container">
             <div class="row">
                <div class="col-offset-3 col-7">
-                  <img src="images/hero04.png" alt="h04" />
+                  <img src="images/hero04.png" alt="h04" /><!--사진-->
                </div>
-               <div class="col-offset-6 col-6 hero-card">
+               <div class="col-offset-6 col-6 hero-card" id="about"> <!--2연결-->
                   <h1 class="vintage">Hello I'm Soony!</h1>
                   <p class="serif">
                      국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 대한민국은 국제평화의
@@ -74,7 +82,7 @@
                      상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.
                   </p>
                   <div class="signbox">
-                     <img src="images/sign.png" alt="sign" />
+                     <img src="images/sign.png" alt="sign" /><!--사진-->
                   </div>
                </div>
             </div>
@@ -83,71 +91,84 @@
    </section>
 
    <!-- section latest video -->
-   <section class="video" id="video">
+   <section class="video" id="video"> <!--2연결-->
       <div class="partner d-flex">
-         <a href=""><img src="images/prt01.png" alt="prt01"></a>
-         <a href=""><img src="images/prt02.png" alt="prt02"></a>
-         <a href=""><img src="images/prt03.png" alt="prt03"></a>
-         <a href=""><img src="images/prt04.png" alt="prt04"></a>
-         <a href=""><img src="images/prt05.png" alt="prt05"></a>
-         <a href=""><img src="images/prt06.png" alt="prt06"></a>
-         <a href=""><img src="images/prt07.png" alt="prt07"></a>
-         <a href=""><img src="images/prt08.png" alt="prt08"></a>
+         <a href=""><img src="images/prt01.png" alt="prt01"></a><!--사진-->
+         <a href=""><img src="images/prt02.png" alt="prt02"></a><!--사진-->
+         <a href=""><img src="images/prt03.png" alt="prt03"></a><!--사진-->
+         <a href=""><img src="images/prt04.png" alt="prt04"></a><!--사진-->
+         <a href=""><img src="images/prt05.png" alt="prt05"></a><!--사진-->
+         <a href=""><img src="images/prt06.png" alt="prt06"></a><!--사진-->
+         <a href=""><img src="images/prt07.png" alt="prt07"></a><!--사진-->
+         <a href=""><img src="images/prt08.png" alt="prt08"></a><!--사진-->
       </div>
       <p class="partner-title">check out my</p>
       <h1 class="partner-title vintage text-center">latest video</h1>
       <a href="#" class="subscribe"><i class="ri-youtube-fill"></i> subscribe</a>
       <div class="vod d-flex">
          <div class="vod-box">
-            <video class="myvideo">
+            <video class="myvideo" muted>
                <source src="vod/001.mp4" type="video/mp4">
                웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
             </video>
-            <div class="myvideo-btn"></div>
+            <div class="myvideo-btn" data-vdo="001.mp4"></div>
             <p class="text-center">Australia’s Most Beautiful<br>
                Island on a Budget</p>
          </div>
          <div class="vod-box">
-            <video class="myvideo">
+            <video class="myvideo" muted>
                <source src="vod/002.mp4" type="video/mp4">
                웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
             </video>
-            <div class="myvideo-btn"></div>
+            <div class="myvideo-btn" data-vdo="002.mp4"></div>
             <p class="text-center">My Solo Trip to Alaska<br>
                6-Days in Paradise</p>
          </div>
          <div class="vod-box">
-            <video class="myvideo">
+            <video class="myvideo" muted>
                <source src="vod/003.mp4" type="video/mp4">
                웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
             </video>
-            <div class="myvideo-btn"></div>
+            <div class="myvideo-btn" data-vdo="003.mp4"></div>
             <p class="text-center">Luxury Thailand Experience.<br>
                The Perfect Getaway</p>
          </div>
       </div>
+      <!--비디오 팝업창-->
+      <div class="vdo-popup-back" id="vdo-back">
+         <div class="vdo-popup">
+            <video controls id="viewvideo">
+               <source src="" type="video/mp4">
+            </video>
+            <div class="close">
+               <span></span>
+               <span></span>
+            </div>
+            <!-- <i class="ri-close-fill"></i> 닫기 버튼 아이콘(개인)!!!! -->
+         </div>
+      </div>
    </section> 
    <!--best places-->
-   <section class="best" id="best">
+   <section class="best" id="best"> <!--2연결-->
       <h1 class="text-center">Best Places to Visit</h1>
       <p class="text-center"><a href="#" class="viewall">VIEW ALL</a></p>
       <div class="bg-f5">
          <div class="container">
             <div class="row">
                <div class="col">
-                  <img src="images/europe.jpg" alt="유럽" />
+                  <img src="images/europe.jpg" alt="유럽" /><!--사진-->
                   <a href="#" class="best-link">유럽</a>
                </div>
                <div class="col">
-                  <img src="images/asia.jpg" alt="아시아" />
+                  <img src="images/asia.jpg" alt="아시아" /><!--사진-->
                   <a href="#" class="best-link">아시아</a>
                </div>
                <div class="col">
-                  <img src="images/africa.jpg" alt="아프리카" />
+                  <img src="images/africa.jpg" alt="아프리카" /><!--사진-->
                   <a href="#" class="best-link">아프리카</a>
                </div>
                <div class="col">
-                  <img src="images/americas.jpg" alt="아메리카" />
+                  <img src="images/americas.jpg" alt="아메리카" /><!--사진-->
                   <a href="#" class="best-link">아메리카</a>
                </div>
             </div>
@@ -174,16 +195,16 @@
       </div>
    </section> 
    <!--work with me-->
-   <section class="workme bg-f5" id="workme">
+   <section class="workme bg-f5" id="workme"> <!--2연결-->
       <div class="container">
          <div class="row">
             <div class="col-offset-1 col-5 p-relative">
                <div class="square">
                   <div class="square-content">
-                     <img src="images/me.jpg" alt="me" />
+                     <img src="images/me.jpg" alt="me" /><!--사진-->
                   </div>
                </div>
-               <img src="images/sign.png" class="me-sign" alt="sign">
+               <img src="images/sign.png" class="me-sign" alt="sign"><!--사진-->
             </div>
             <div class="col-5 bg-map">
                <h3 class="vintage current">Current Location</h3>
@@ -207,7 +228,7 @@
    </section>
    <section class="instagram" id="instagram">
       <h1 class="text-center">
-         <i class="ri-instagram-fill"></i>
+         <i class="ri-instagram-fill">Instagram</i>
       </h1>
       <div class="insta-link">
          <a href="#">
@@ -228,8 +249,23 @@
       </div>
    </section>
    <footer>
-      <na></na>
-      <div class="sns-box"></div>
+      <nav>
+         <!--메뉴-->
+         <ul class="main">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li> 
+            <li><a href="#">DESTINATION</a>
+            <li><a href="#video">video</a></li>
+            <li><a href="#">PHOTOS</a></li>
+            <li><a href="#">wORK WITH ME</a></li>
+         </ul>
+      </nav>
+      <!--sns-->
+      <div class="sns-box text-center">
+         <a href="#"><i class="ri-kakao-talk-fill"></i></a>
+         <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+         <a href="#"><i class="ri-instagram-fill"></i></a>
+      </div>
       <div class="copyright">
          <p class="text-center">
             Copyleft &copy; Park's all copy Rexerved.
@@ -237,5 +273,4 @@
       </div>
    </footer>
 </body>
-
 </html>
