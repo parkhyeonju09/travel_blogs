@@ -34,13 +34,22 @@ $(document).ready(function(){
        $('.vdo-popup-back').fadeIn(400); //팝업 열기
     });
 
+    //close 버튼 눌러서 닫기
     $('.close').click(function(){
         $('.vdo-popup-back').fadeOut(500);
     })
-  
+
     // 닫기 버튼 클릭 시 팝업 닫기(개인)
     // $(".ri-close-fill").on("click", function(){
     //     $('.vdo-popup-back').fadeOut(400); // 팝업 닫기
     // });
+
+    //overlaㅛ된 바탕화면 눌러서 닫기
+    $('.vdo-popup-back').click(function(e){
+        if($(e.target).is('#vdo-bavk')){
+            $(this).fadeOut(500);
+        }
+    });
+
 
   });
